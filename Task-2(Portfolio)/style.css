@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Honey';
+    src: url(Fonts/HoneyScript-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Grosek';
+    src: url(Fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@keyframes web_grow{
+    0%{
+        transform: scaleX(0.1);
+    }
+    100%{
+        transform: scaleX(0.40);
+    }
+}
+
+
+@keyframes pro_grow{
+    0%{
+        transform: scaleX(0.1);
+    }
+    100%{
+        transform: scaleX(0.68);
+    }
+}
+
+@keyframes data_grow{
+    0%{
+        transform: scaleX(0.1);
+    }
+    100%{
+        transform: scaleX(0.3);
+    }
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    background-color: #DAF0EE;
+}
+
+.hname:hover{
+    text-shadow: 5px 5px 10px black;
+    transition-duration: 0.69s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    background-color: #3B413C;
+}
+
+.hbutton:hover{
+    box-shadow: 2px 2px 4px black;
+    border-radius: 75px;
+    padding: 5px;
+    transition-duration: 0.4s;
+}
+button{
+    background-color: none;
+    padding: 8px;
+    font-size: 17px;
+    color: white;
+    border: none;
+    background-color: #3B413C;
+    cursor: pointer;
+}
+
+.flex{
+    padding: 19px;
+}
+
+.image{
+    width: 750px;
+    padding-top: 150px;
+}
+.hello{
+    font-size: 69px;
+    color: #3B413C;
+    font-family: Honey;
+}
+.hello:hover{
+    text-shadow: 1px 1px 2px black;
+    transition-duration: 0.4s;
+    transition-delay: 0.1s;
+}
+.mcontent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro{
+    font-size: 39px;
+    color: #3B413C;
+    font-family: Grosek;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}   
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.empty{
+    width: auto;
+    height: 157px;
+}
+
+.about{
+    height: 400px;
+}
+
+.icon{
+    padding: 20px;
+    display: flex;
+}
+
+.about{
+    background-color: black;
+    height: 250px;
+    display: flex;
+    
+}
+.edu{
+    font-family: Grosek;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 160px;
+    flex-direction: column;
+}
+
+.Skills{
+    font-family: Grosek;
+    font-size: 20px;
+    color: #3B413C;
+}
+.outer{
+    width: 400px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px ;
+}
+
+.webD{
+    width: 75%;
+    height: 10px;
+    background-color: #3B413C;
+    transform-origin: left;
+    animation: web_grow 6s forwards;
+}
+
+.programming{
+    width: 75%;
+    height: 10px;
+    background-color: #3B413C;
+    transform-origin: left;
+    animation: pro_grow 6s forwards;
+}
+    
+.database{
+    width: 75%;
+    height: 10px;
+    background-color: #3B413C;
+    transform-origin: left;
+    animation: data_grow 6s forwards;
+}
+
+.empt{
+    width: auto;
+    height: 25px;
+}
+
+.project{
+    width: auto;
+    height: 240px;
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 130px 130px;
+    opacity: 0.9;
+}
+
+.pro1{
+    /* border: 2px solid red;*/
+    box-shadow: 14px 14px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+    height: 110px;
+    width: 580px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Grosek;
+    font-size: 22px;
+    flex-direction: column;
+    background-color: #faf3dd;
+}
+
+
+.prolang{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #00b4d8;
+    
+}
+
+.ico{
+    width: 30px;
+    height: 30px;
+    padding-left: 220px;
+}
+
+
+.contact{
+    font-family: Grosek;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reach_out{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gmail{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.resume{
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
