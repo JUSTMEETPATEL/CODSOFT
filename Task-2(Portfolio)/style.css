@@ -36,13 +36,32 @@
     }
 }
 
+@keyframes fade_out {
+    to{ opacity: 0;}
+}
+
+@keyframes zoom{
+    25%{ opacity: 0.9;}
+    85%,100%{opacity: 0; scale: 3;}
+}
+
+@keyframes cursor {
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from{ width: 0 ;}
+    
+}
 
 *{
     padding: 0;
     margin: 0;
 }
 .main{
-    background-color: #DAF0EE;
+    background-color: #1b1c1b;
 }
 
 .hname:hover{
@@ -54,7 +73,7 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 17px;
-    background-color: #3B413C;
+    background-color: #1b1c1b;
 }
 
 .hbutton:hover{
@@ -69,7 +88,7 @@ button{
     font-size: 17px;
     color: white;
     border: none;
-    background-color: #3B413C;
+    background-color: #1b1c1b;
     cursor: pointer;
 }
 
@@ -83,7 +102,7 @@ button{
 }
 .hello{
     font-size: 69px;
-    color: #3B413C;
+    color: white;
     font-family: Honey;
 }
 .hello:hover{
@@ -91,26 +110,56 @@ button{
     transition-duration: 0.4s;
     transition-delay: 0.1s;
 }
+
+.bgimg{
+    max-width: 100%;
+    height: auto;
+    position: relative;   
+    animation: zoom linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+    inset: 0;
+    object-fit: cover;
+    opacity: 0.5;
+    overflow: hidden;
+}
 .mcontent{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .intro{
     font-size: 39px;
-    color: #3B413C;
+    color: white;
     font-family: Grosek;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
+    display: inline-block;
+    position: absolute;
+    padding-top: 50px;
+    top:70%;
+    animation: fade_out linear;
+    animation-timeline: view();
+    animation-range: exit -200px;
 }   
+
+.text{
+    font-size: 22px;
+    letter-spacing: 10px;
+    font-family: Grosek;
+    border-right :5px solid ;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 3s,
+        cursor .4s step-end infinite alternate;
+
+}
 .container2{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 
@@ -147,7 +196,11 @@ button{
 .Skills{
     font-family: Grosek;
     font-size: 20px;
-    color: #3B413C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
 }
 .outer{
     width: 400px;
@@ -159,25 +212,29 @@ button{
 .webD{
     width: 75%;
     height: 10px;
-    background-color: #3B413C;
+    background-color: rgb(88, 3, 88);
     transform-origin: left;
-    animation: web_grow 6s forwards;
+    animation: web_grow 4s forwards;
+    animation-timeline: view();
 }
 
 .programming{
     width: 75%;
     height: 10px;
-    background-color: #3B413C;
+    background-color: rgb(88, 3, 88);
     transform-origin: left;
-    animation: pro_grow 6s forwards;
+    animation: pro_grow 4s forwards;
+    animation-timeline: view();
+
 }
     
 .database{
     width: 75%;
     height: 10px;
-    background-color: #3B413C;
+    background-color: rgb(88, 3, 88);
     transform-origin: left;
-    animation: data_grow 6s forwards;
+    animation: data_grow 4s forwards;
+    animation-timeline: view();
 }
 
 .empt{
@@ -250,7 +307,7 @@ button{
 
 .resume{
     font-size: 20px;
-    text-decoration: none;
+
 
 }
 
