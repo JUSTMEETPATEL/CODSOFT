@@ -345,3 +345,8 @@
     grid-template-rows: auto;
     margin: 50px;
 }
+
+.sec-box:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
