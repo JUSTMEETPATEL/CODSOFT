@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "Ginto";
+    src: url(assets/fonts/GintoNord.otf);
+}
+
+@font-face {
+    font-family: "GG sans";
+    src: url(assets/fonts/ggsans-Medium.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.layer1{
+    background-color: rgba(88, 101, 242, 0);
+    
+}
+
+.layer1 img{
+    position: relative;
+}
+
+
+.bar{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+
+}
+
+.bar span img{
+    width: 150px;
+    padding-left: 50px;
+}
+
+.open_dis{
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    padding: 7px 16px;
+    border: none;
+    line-height: 24px;
+    font-family: GG sans;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.open_dis:hover{
+    color: rgb(88,101,242);
+    box-shadow: 0px 8px 15px rgba(0,0,0,.2);
+}
+
+.navi{
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: GG sans;
+}
+
+.navi:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.opi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box1{
+    position: absolute;
+    top: 33%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    width: 100%;
+}
+
+.sub_box-1{
+    font-family: Ginto;
+    color: white;
+    font-size: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub_box-2{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: GG sans;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+
+.sub_box-3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding-top: 50px;
+    font-family: GG sans;
+}
+
+.imgdownload{
+    padding-right: 10px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 28px;
+    padding: 16px 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.imgdownload:hover{
+    color: rgb(88,101,242);
+    box-shadow: 0px 8px 15px rgba(0,0,0,.2);
+}
+
+.imgdownload1{
+    padding-right: 10px;
+    background-color: #23272a;
+    color: #fff;
+    border: none;
+    border-radius: 28px;
+    padding: 16px 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.imgdownload1:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.layer2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.sec1text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+}
+
+.text1{
+    font-size: 40px;
+    color:#23272a;
+    font-family: GG sans;
+    font-weight: 700;
+
+}
+
+.text2{
+    padding-top: 20px;
+    font-size: 20px;
+    color:#23272a;
+    font-family: GG sans;
+    font-weight: 200;
+}
+
+
+.layer3{
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-columns: 25% 15% 40% 20%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.sec2text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.empty{
+    height: 100px;
+}
+
+
+.sec3text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 230px;
+}
+
+.layer4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 120px;
+    margin-right: 120px; */
+    margin-top: 90px;
+    padding-top: 90px; 
+    background-color: #f6f6f6;
+}
+
+.mtext{
+    font-family: Ginto;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subtext{
+    font-family: GG sans;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.layer5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-image: url(assets/images/sparkles.svg);
+}
+
+.sub-layer5-text{
+    font-size: 40px;
+    font-family: GG sans;
+    font-weight: 300;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.layer5-button{
+    padding-right: 10px;
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    padding: 14px 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.bottom{
+    background-color: #23272a;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    position: relative;
+    overflow: visible;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 33.2% 16.6%  16.6% 16.6% 16.6%;
+    grid-template-rows: auto;
+    margin: 50px;
+    gap:7px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flag{
+    width: 15px;
+    padding-right: 5px;
+}
+
+.drop{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon-pad{
+    padding-left: 25px;
+}
+
+.empt{
+    height: 50px;
+}
+
+
+
+.Head{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #5865f2;
+    font-family: GG sans;
+}
+
+.sec-box{
+    color: #fff;
+}
+
+.bux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.blueline{
+    background-color: #5865f2;
+    height: 2px;
+    margin: 50px;
+}
+
+.btmpart{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    margin: 50px;
+}
