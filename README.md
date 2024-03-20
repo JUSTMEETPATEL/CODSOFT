@@ -9,7 +9,7 @@ In this repository, you will find the completed tasks accomplished by Meet Patel
 ### 1. Discord Landing Page:
 - Description: A landing page designed for Discord, featuring key information and a visually appealing layout.
 - Technologies Used: HTML, CSS
-- File Location: `Task-1(Discord Landing Page)/index.html`
+- File Location: `Task-1(Landing Page)/index.html`
 - Instructions: Open `index.html` in a web browser, preferably Google Chrome, to view the landing page.
 
 ### 2. Portfolio Website:
@@ -21,7 +21,7 @@ In this repository, you will find the completed tasks accomplished by Meet Patel
 ### 3. Calculator:
 - Description: A simple web-based calculator for performing basic arithmetic operations.
 - Technologies Used: HTML, CSS, JavaScript
-- File Location: `calculator/index.html`
+- File Location: `Task-3(Calculator)/index.html`
 - Instructions: Open `index.html` in a web browser, preferably Google Chrome, to use the calculator.
 
 ## How to View:
